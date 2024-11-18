@@ -10,12 +10,13 @@ public class Gomb extends FaIdom {
 
     @Override
     public double terfogat() {
-        return 0;
+        return (4 * Math.pow(sugar, 3) * Math.PI) / 3;
     }
 
     @Override
     public String toString() {
-        return "Gomb{" +
+        String os = super.toString();
+        return os + " <-- Gomb{" +
                 "Sugar=" + sugar +
                 '}';
     }

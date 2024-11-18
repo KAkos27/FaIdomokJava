@@ -1,6 +1,6 @@
 package hu.szamalk.idomok;
 
-public class Hasab extends FaIdom{
+public class Hasab extends FaIdom {
 
     private double a, b, magassag;
 
@@ -12,12 +12,13 @@ public class Hasab extends FaIdom{
 
     @Override
     public double terfogat() {
-        return 0;
+        return a * b * magassag;
     }
 
     @Override
     public String toString() {
-        return "Hasab{" +
+        String os = super.toString();
+        return os + " <-- Hasab{" +
                 "a=" + a +
                 ", b=" + b +
                 ", magassag=" + magassag +
