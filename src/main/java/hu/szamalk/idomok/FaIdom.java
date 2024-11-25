@@ -1,10 +1,8 @@
 package hu.szamalk.idomok;
 
-public abstract class FaIdom {
+public abstract class FaIdom extends Idom {
 
     private static double fajsuly = 0.8;
-
-    public abstract double terfogat();
 
     public double suly() {
         return this.terfogat() * fajsuly;
